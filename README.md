@@ -16,7 +16,7 @@ Este es el repositorio para el frontend de la página web de una emisora, donde 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 - Node.js (>= 14)
-- npm (>= 6) o yarn (opcional)
+- npm (>= 6)
 
 ## Instalación
 

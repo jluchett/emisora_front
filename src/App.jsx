@@ -1,11 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
+import Canciones from './pages/canciones';
 
 function App() {
 
   return (
-    <>
-      <h1>Hola mundo</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Canciones/>}/>
+      </Routes>
+    </Router>
   )
 }
 

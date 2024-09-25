@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Canciones from './pages/canciones';
+import Canciones from './pages/canciones/canciones';
+import Header from './components/header/header';
 
-function App() {
+
+const App = () => {
 
   return (
     <Router>
+      <Header/>
       <Routes>
-        <Route path='/' element={<Canciones/>}/>
+        <Route path='/canciones' element={<Canciones/>}/>
       </Routes>
     </Router>
   )

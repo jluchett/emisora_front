@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Canciones() {
+const Canciones = () => {
   const [canciones, setCanciones] = useState([]);
   const [currentSong, setCurrentSong] = useState(null);
 

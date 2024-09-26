@@ -6,12 +6,11 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>Empresa</h3>
+          <h3>Emisora</h3>
           <ul>
-            <li><a href="#about">Acerca de radio.net</a></li>
-            <li><a href="#press">Prensa</a></li>
-            <li><a href="#advertise">Anúnciate con nosotros</a></li>
-            <li><a href="#broadcast">Emite tus contenidos</a></li>
+            <li><a href="#about">Acerca de Emisora.net</a></li>
+            <li><a href="#press">Misión</a></li>
+            <li><a href="#press">Visión</a></li>
           </ul>
         </div>
 
@@ -38,14 +37,16 @@ const Footer = () => {
           <h3>Redes sociales</h3>
           <div className="social-icons">
             <a href="#linkedin" className="social-icon">LinkedIn</a>
-            <a href="#xing" className="social-icon">Xing</a>
+            <a href="#xing" className="social-icon">X</a>
+            <a href="#xing" className="social-icon">WhatsApp</a>
+            <a href="#xing" className="social-icon">Facebook</a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
         <p>🇨🇴 Colombia</p>
-        <p>v6.23.0 | &copy; 2007-2024 radio.de GmbH</p>
+        <p>v1.0.0 | &copy; 2024 Emisora.net</p>
         <p>Generated: {new Date().toLocaleString()}</p>
       </div>
     </footer>

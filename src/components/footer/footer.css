@@ -4,22 +4,16 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 14px;
   }
   
   .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .footer-column h3 {
-    color: #fff;
-    margin-bottom: 10px;
   }
   
   .footer-column ul {
@@ -28,7 +22,7 @@
   }
   
   .footer-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
   
   .footer-column ul li a {

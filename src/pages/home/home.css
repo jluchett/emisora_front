@@ -1,0 +1,54 @@
+/* Estilos para el contenedor principal del Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .weather-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  /* Sección principal para la información */
+  .main-section {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sección lateral para noticias */
+  .news-section {
+    width: 30%;
+    min-width: 200px;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo responsive para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    .news-section {
+      display: none;
+    }
+  }
+  

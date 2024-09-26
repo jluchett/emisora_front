@@ -1,0 +1,44 @@
+.canciones-page {
+    padding: 20px;
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .lista-canciones {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cancion-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-reproducir {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-reproducir:hover {
+    background-color: #45a049;
+  }
+  
+  .reproductor {
+    margin-top: 20px;
+  }
+  
+  audio {
+    width: 50%;
+    margin-top: 10px;
+  }
+  

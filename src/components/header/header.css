@@ -1,13 +1,18 @@
 .header {
     background-color: #1a1a1a;
-    padding: 10px 200px;
+    padding: 10px 0;
     color: #fff;
+    position: fixed;  /* Hace que el header sea fijo */
+    width: 100%;  /* Ocupa todo el ancho de la página */
+    top: 0;
+    left: 0;
 }
 
 .header-container {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: 0 11%;  /* Solo agrega padding horizontal */
 }
 
 .header-title {

@@ -12,15 +12,74 @@ const Home = () => {
                 </section>
                 <div className="content-container">
                     <section className="main-section">
-                        <h2>Main</h2>
-                        <p>Aquí se mostrará información de varias secciones de la página.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni fugiat maiores voluptates assumenda nostrum iure. Ab, unde molestiae iste aspernatur, in quibusdam, nostrum eaque repellat totam nulla porro ipsa.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem magni, commodi odit assumenda voluptatum laboriosam consequatur saepe nobis ipsam, quibusdam rerum soluta quae facilis voluptas nisi explicabo cumque. Ullam, neque.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sapiente enim doloremque distinctio ut odio earum autem eveniet provident cum. Voluptatibus, delectus. Eveniet incidunt perferendis eius rerum, et beatae cum?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dignissimos, corrupti velit reprehenderit consectetur eveniet itaque ipsum harum perferendis error nobis cum sunt delectus aspernatur fugit facere debitis recusandae consequatur.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt iusto commodi eaque itaque non consectetur ut repudiandae delectus consequuntur distinctio aliquam omnis laborum quas sint, possimus quis autem animi?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi veritatis sit numquam laboriosam dolorem, non harum voluptas a recusandae nostrum obcaecati modi quod. Nesciunt deleniti nam fugit ipsum ratione!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illo iure at amet, ut expedita quidem, ad nobis ratione molestiae aspernatur aut. Cumque dignissimos dolorum ratione. Possimus molestiae provident tenetur.</p>
+                        <h2>Lo más destacado</h2>
+
+                        {/* Top 10 canciones más escuchadas */}
+                        <div className="top-section">
+                            <h3>Top 10 Canciones Más Escuchadas</h3>
+                            <ol>
+                                <li>Canción 1</li>
+                                <li>Canción 2</li>
+                                <li>Canción 3</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                {/* ... */}
+                            </ol>
+                        </div>
+
+                        {/* Top 10 películas mejor calificadas */}
+                        <div className="top-section">
+                            <h3>Top 10 Películas Mejor Calificadas</h3>
+                            <ol>
+                                <li>Película 1</li>
+                                <li>Película 2</li>
+                                <li>Película 3</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                {/* ... */}
+                            </ol>
+                        </div>
+
+                        {/* Top 10 libros más recomendados */}
+                        <div className="top-section">
+                            <h3>Top 10 Libros Más Recomendados</h3>
+                            <ol>
+                                <li>Libro 1</li>
+                                <li>Libro 2</li>
+                                <li>Libro 3</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                {/* ... */}
+                            </ol>
+                        </div>
+
+                        {/* Slider de reseñas de usuarios */}
+                        <div className="reviews-slider">
+                            <h3>Reseñas de los Usuarios</h3>
+                            <div className="slider">
+                                <div className="slide">Reseña 1</div>
+                                <div className="slide">Reseña 2</div>
+                                <div className="slide">Reseña 3</div>
+                                <div className="slide">Reseña 4</div>
+                                
+                                {/* Implementar funcionalidad del slider aquí */}
+                            </div>
+                        </div>
                     </section>
 
                     <section className="news-section">

@@ -4,8 +4,8 @@ import Footer from '../../components/footer/footer';
 
 const Home = () => {
     return (
-        <div>
-            <div className="home-container">
+        <>
+            <main className="main-container">
                 <section className="weather-section">
                     <h2>Clima Actual</h2>
                     <p>Aquí se mostrará el clima de la ubicación del usuario.</p>
@@ -76,7 +76,7 @@ const Home = () => {
                                 <div className="slide">Reseña 2</div>
                                 <div className="slide">Reseña 3</div>
                                 <div className="slide">Reseña 4</div>
-                                
+
                                 {/* Implementar funcionalidad del slider aquí */}
                             </div>
                         </div>
@@ -87,9 +87,9 @@ const Home = () => {
                         <p>Aquí se mostrarán las noticias.</p>
                     </section>
                 </div>
-            </div>
+            </main>
             <Footer />
-        </div>
+        </>
 
     );
 };

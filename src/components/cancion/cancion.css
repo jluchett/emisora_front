@@ -1,0 +1,49 @@
+.cancion-item {
+  margin: 5px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  align-items: center; /* Alinea verticalmente todos los elementos */
+}
+
+.cancion-icono {
+  font-size: 40px;
+  margin-right: 15px;
+  color: rgb(19, 95, 126);
+  margin-bottom: 5px;
+}
+
+.cancion-info {
+  display: flex;
+  flex-direction: column; /* Coloca el título y detalles en columnas */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: flex-start; /* Alinea a la izquierda */
+  min-width: 400px;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.cancion-titulo {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cancion-detalles {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  
+}
+
+.btn-play {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 34px;
+  color: gray;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-play:hover {
+  color: #029209;
+}

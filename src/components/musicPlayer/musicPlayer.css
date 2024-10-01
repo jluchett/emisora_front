@@ -1,0 +1,67 @@
+.music-player {
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .player-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .volume-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .volume-control input {
+    margin-left: 10px;
+  }
+  
+  .track-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .track-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .track-details p {
+    margin: 5px 0;
+    color: #ccc;
+  }
+  
+  .track-progress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .track-progress input {
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .playback-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  .playback-controls svg {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+  }
+  

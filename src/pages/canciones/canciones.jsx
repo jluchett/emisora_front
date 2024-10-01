@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import './Canciones.css';
 import Footer from '../../components/footer/footer';
 import Cancion from '../../components/cancion/cancion';
+import MusicPlayer from '../../components/musicPlayer/musicPlayer';
 
 const Canciones = () => {
   const [canciones, setCanciones] = useState([]);
@@ -15,14 +16,6 @@ const Canciones = () => {
       .then((data) => setCanciones(data))
       .catch((error) => console.error('Error al obtener canciones:', error));
   }, []);
-
-  // useEffect para reproducir la canción seleccionada
-  useEffect(() => {
-    if (audioRef.current && currentSong) {
-      audioRef.current.load();  // Cargar la nueva canción
-      audioRef.current.play();  // Reproducirla automáticamente
-    }
-  }, [currentSong]);
 
   const handlePlaySong = (song) => {
     setCurrentSong(song);
@@ -49,21 +42,12 @@ const Canciones = () => {
             </ol>
           </section>
 
-          <section>
+          <section className='reproductor'>
             {currentSong && (
-              <div className="reproductor">
-                <h2>Reproduciendo: {currentSong.titulo}</h2>
-                <audio ref={audioRef} controls>
-                  <source src={currentSong.mp3url} type="audio/mp3" />
-                  Tu navegador no soporta el elemento de audio.
-                </audio>
-              </div>
+              <MusicPlayer currentSong={currentSong}/>
             )}
           </section>
-
         </div>
-
-
       </main>
       <Footer />
     </>

@@ -1,13 +1,16 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import './Canciones.css';
 import Footer from '../../components/footer/footer';
 import Cancion from '../../components/cancion/cancion';
 import MusicPlayer from '../../components/musicPlayer/musicPlayer';
-
+const inicialSong = {
+  titulo: "Seleccionar",
+  filename: "Titulo de la cancion",
+  duracion: "0:00"
+}
 const Canciones = () => {
   const [canciones, setCanciones] = useState([]);
-  const [currentSong, setCurrentSong] = useState(null);
-  const audioRef = useRef(null); // Referencia al elemento de audio
+  const [currentSong, setCurrentSong] = useState(inicialSong);
 
   useEffect(() => {
     // Llamada al backend para obtener las canciones
@@ -43,9 +46,13 @@ const Canciones = () => {
           </section>
 
           <section className='reproductor'>
+            <h1 className="titulo">Reproduciendo</h1>
+            
             {currentSong && (
-              <MusicPlayer currentSong={currentSong}/>
+              <MusicPlayer currentSong={currentSong} />
             )}
+            
+            
           </section>
         </div>
       </main>

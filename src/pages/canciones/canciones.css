@@ -21,10 +21,8 @@
 }
 
 .reproductor {
-  margin-top: 20px;
-}
-
-audio {
-  width: 50%;
-  margin-top: 10px;
+  width: 40%;
+  background-color:darkgray;
+  display: flex;
+  flex-direction: column;
 }

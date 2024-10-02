@@ -51,6 +51,9 @@ const MusicPlayer = ({ currentSong }) => {
             onChange={handleVolumeChange}
           />
         </div>
+        <div className="cancion-icono2">
+          <i className="fas fa-music"></i>
+        </div>
         <div className="track-info">
           <div className="track-details">
             <h3>{currentSong.titulo}</h3>
@@ -64,6 +67,7 @@ const MusicPlayer = ({ currentSong }) => {
           >
             <source src={currentSong.mp3url} type="audio/mp3" />
           </audio>
+
           <div className="track-progress">
             <span>{formatTime(currentTime)}</span>
             <input
@@ -73,7 +77,7 @@ const MusicPlayer = ({ currentSong }) => {
               value={currentTime}
               onChange={(e) => (audioRef.current.currentTime = e.target.value)}
             />
-            <span>{formatTime(duration)}</span>
+            <span>{formatTime(duration || 0)}</span>
           </div>
         </div>
         <div className="playback-controls">
